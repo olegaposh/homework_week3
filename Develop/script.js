@@ -47,9 +47,9 @@ function generatePassword() {
   var numericArray = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
   var upperArray = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "X", "Y", "Z"];
   var lowerArray = ["a", "b", "c", ",d", "e", "f", "g", "j", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "x", "y", "z"];
-  //var randomArray = ["2", "j", "F", "&", "4", "y", "#"]; 
 
 
+  // set empty array and empty string
 
   var master = [];
   var password = "";
@@ -102,69 +102,6 @@ function generatePassword() {
 
   return password;
 }
-
-
-
-/*
-var randomArray = [];
-
-// adding a random requested character
-
-if (special) {
-
-    randomArray.push(randomizer(specialArray)); 
-}
-
-if (numeric) {
-
-  randomArray.push(randomizer(numericArray)); 
-}
-
-if (upperCase) {
-
-  randomArray.push(randomizer(upperArray)); 
-}
-
-if (lowerCase) {
-
-  randomArray.push(randomizer(lowerArray)); 
-}
-
-
-for (i = 0; i < numberOfCharacters.length; i++)   {
-
-  
-
-}
-
-
-
-}
-
-// function that returns a random index of an array
-
-function randomizer(array) {
-
-
-  var index = Math.floor(Math.random() * array.length);
-  var element = array[index]
-  return element;
-
-}
-
-
-
-// if special is true call randomizer specialArray
-
-
-*/
-
-
-
-
-
-
-
 
 
 // Write password to the #password input
